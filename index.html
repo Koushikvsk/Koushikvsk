@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-portfolio</title>
+    <link rel="icon" href="asserts/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Krishna Kaushik</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="sepration"></div>
+    <nav id="hamburger-nav">
+        <div class="logo">Krishna Kaushik</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src ="asserts/my-img.jpeg" alt ="TSK Profile Pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'am</p>
+            <h1 class="title">Krishna Kaushik</h1>
+            <p class="section__text__p2">MERN DEVELOPER</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./asserts/krishnakaushik_resume4.pdf')">Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img src="asserts/linkedin.png" alt="MY linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/krishna-koushik-thota-956899259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'">
+                <img src="asserts/github.png" alt="MY GitHub Profile" class="icon" onclick="location.href='https://github.com/Koushikvsk/myproject/tree/main'">
+
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">about me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+
+                <div class="mySlides fade">
+                    <img src="asserts/c++.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="asserts/python (1).png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="asserts/html-5.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="asserts/css-3 (1).png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="asserts/js.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="asserts/react (2).png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="asserts/bootstrap (1).png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="asserts/nodejs.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="asserts/typescript (1).png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="asserts/database (1).png" style="width:100%">
+                </div>
+
+            </div>
+
+            <div class="about-details-container">
+                <div class="about-containers">
+
+                    <div class="details-container">
+                        <img src="asserts/experience.png" alt="Experience icon" class="icon">
+                        <h3>My Skills</h3>
+                        <p>1.5years+ <br/> MERN & DSA </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="asserts/education.png" alt="Education icon" class="icon">
+                        <h3>My Education</h3>
+                        <p>B.tech from IIIT-Bhagalpur <br/> ECE <br/> GPA-7.2 </p>
+                    </div>
+
+                </div>
+                <div class="text-container">
+                    <p>
+                        Programming Languages :  C/C++, PYTHON (for Data Structures and Algorithms, 
+                        Object Oriented Programming,  DBMS).<br/>
+                        Web languages: HTML, CSS, Javascript, React.js, Vue.js, Node.js, Typescript , 
+                        Express.js, REST API.<br/>
+                        Database: postgreSQL, MySQL, MongoDB.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="asserts/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience' ">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Front-End Development</h2>
+                    <div class="articles-container">
+
+                        <article>
+                            <img src="asserts/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>HTML-5</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="asserts/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="asserts/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Java-Script</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="asserts/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Bootstrap</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="asserts/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>C++</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="asserts/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>React-Js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Back-End Development & Databases</h2>
+                    <div class="articles-container">
+
+                        <article>
+                            <img src="asserts/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="asserts/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Node-Js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="asserts/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="asserts/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>postgreSQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="asserts/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>MongoDB</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="asserts/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Git-Hub</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <img src="asserts/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects' ">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+
+            <div class="details-container color-container">
+                <div class="articles-container">
+                    <img src="asserts/work-1.png" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Netflix-Clone</h2>
+                <div class="btn-container">
+
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Koushikvsk/myproject/tree/main' ">
+                        Source Code
+                    </button>
+                    
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://subtle-jalebi-f9a505.netlify.app/' ">
+                        Live Demo
+                    </button>
+
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="articles-container">
+                    <img src="asserts/work-2.png" alt="Project 2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Medical Inventory App</h2>
+                <div class="btn-container">
+
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Koushikvsk/myproject/tree/main' ">
+                        Source Code
+                    </button>
+                    
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Koushikvsk/myproject/tree/main' ">
+                        Live Demo
+                    </button>
+
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="articles-container">
+                    <img src="asserts/work-3.png" alt="Project 3" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Personal Portfolio</h2>
+                <div class="btn-container">
+
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Koushikvsk/myproject/tree/main' ">
+                        Source Code
+                    </button>
+
+                </div>
+            </div>
+            
+        </div>
+        </div>
+        <img src="asserts/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact' ">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+
+            <div class="contact-info-container">
+                <img src="asserts/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:tskrishnakaushik@gmail.com">tskrishnakaushik@gmail.com<br/> ph.No: +91 7569236153</p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="asserts/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/krishna-koushik-thota-956899259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</p>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 T.S.K.K</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
