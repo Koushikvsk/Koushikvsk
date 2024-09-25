@@ -91,5 +91,9 @@
     .text-container{
         text-align: justify;
     }
+    .mySlides{
+        width: 50%;
+        margin-top: 1rem;
+    }
 
 }
