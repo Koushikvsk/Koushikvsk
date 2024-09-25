@@ -109,6 +109,7 @@ a:hover{
     width: fit-content;
     max-width: 0;
     overflow: hidden;
+    max-height: 0px;
     transition: all 0.3 ease-in-out;
 }
 
@@ -128,6 +129,8 @@ a:hover{
 
 .menu-links.open{
     max-height: 300px;
+    max-width: fit-content;
+    z-index: 2;
 }
 
 .hamburger-icon.open span:first-child{
@@ -182,6 +185,7 @@ section{
     height: 400px;
     width: 400px;
     margin: auto 0;
+    position: relative;
 }
 
 .section__text{
@@ -272,20 +276,50 @@ section{
 
 /*slide-show*/
 
-.mySlides {
-    display: none;
-    z-index: -1;
-}
-
 
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+.fadein {
+    animation: fadein 1s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.fadeout {
+    animation: fadeout 1s;
+    opacity: 0;
+    visibility: hidden;
 }
 
 @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+        visibility: hidden;
+    }
+    to{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes fadeout {
+    from{
+        opacity: 1;
+        visibility: visible;
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 /*about section*/
